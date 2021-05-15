@@ -1,12 +1,10 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
         <p>
           Edit <code>src/App.tsx</code> and save to reload.
         </p>
@@ -18,6 +16,10 @@ function App() {
         >
           Learn React
         </a>
+        <h1>This is my first page</h1>
+        <h2>This is my first page</h2>
+        <h3>This is my first page</h3>
+        <h4>This is my first page</h4>
       </header>
     </div>
   );
