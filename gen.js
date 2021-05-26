@@ -16,10 +16,9 @@ const genFile = (name) => {
 
 const run = () => {
 
-  var i;
-  for (i = 0; i < 100; i++) {
-    const name = randomWords(1)[0];
+  const names = randomWords(1000);
 
+  for (const name of names) {
     fs.writeFileSync(`./src/stories/${name}.stories.tsx`, genFile(name), function (err, data) {
       if (err) {
         return console.log(err);
@@ -27,6 +26,7 @@ const run = () => {
       console.log(data);
     });
   }
+  
 };
 
 run();
