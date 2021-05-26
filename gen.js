@@ -16,7 +16,7 @@ const genFile = (name) => {
 
 const run = () => {
 
-  const names = randomWords(1000);
+  const names = [...new Set(randomWords(1000))];
 
   for (const name of names) {
     fs.writeFileSync(`./src/stories/${name}.stories.tsx`, genFile(name), function (err, data) {
